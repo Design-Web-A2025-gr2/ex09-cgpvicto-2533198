@@ -2,7 +2,10 @@
     font-family: ObviouslyVariable;
     src: url('https://use.typekit.net/af/94379b/0000000000000000774b907c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3');
 }
-
+@font-face{
+    font-family:"Roboto";
+    src: url(../assets/fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf);
+}
 :root {
     --couleur-texte: #2a292b;
     --color-bg: #f9f4ed;
@@ -18,4 +21,118 @@
 
 body {
     margin: var(--espacement);
+}
+header{
+    display: flex;
+    height:var(--hauteur-entete) ;
+    background-color:var(--color-bg);
+    border-radius:var(--border-radius);
+    justify-content: space-between;
+    font-family: Roboto;
+}
+#Logo {
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    align-self: center;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    font-family: Roboto;
+}
+ul li{
+    margin-right:var(--espacement);
+    font-family: Roboto;
+}
+.Grass{
+    font-weight: bold;
+}
+a{
+     color: var(--couleur-texte);
+    text-decoration: none;
+}
+#icon{
+    justify-content: flex-end;
+    align-self: center;
+}
+main{
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--border-radius);
+    align-items: stretch;
+}
+aside{
+    border-radius: var(--border-radius);
+    display: flex;
+    width: 35vw;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-right:0.5rem solid white;
+}
+article{
+    border-radius: var(--border-radius);
+    display: flex;
+    width: 65vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--color-bg);
+}
+.Rethink{
+    display: flex;
+    color: var(--couleur-texte);
+    font-family:ObviouslyVariable ;
+    flex-direction: column;
+    font-size:7rem;
+    font-stretch:extra-condensed;
+    font-weight: bold;
+    line-height: 5rem;
+}
+.Decaf{
+    display: flex;
+    color: var(--couleur-texte);
+    font-family:ObviouslyVariable ;
+    flex-direction: column;
+    font-size:7rem;
+    font-stretch:extra-condensed;
+    font-weight: bold;
+    line-height: 8rem;
+}
+.texte{
+    display: flex;
+    color: var(--couleur-texte);
+    font-family:Roboto;
+    flex-direction: column;
+    font-size:0.75rem;
+    font-stretch:semi-expanded;
+    font-weight:600;
+    line-height: 0rem;
+}
+.etoile{
+    display: flex;
+    color: var(--couleur-texte);
+    font-family: Roboto;
+    font-size:0.85rem;
+    font-weight:400;
+    font-stretch:semi-expanded;
+    line-height: 3rem;    
+}
+.bouton{
+    font-family: Roboto;
+    background-color: var(--color-bouton);
+    color: var(--color-bg);
+    border-color: var(--color-bouton);
+    border-radius: 0.5rem;
+    font-size:0.85rem;
+    width: 10rem;
+    height: 2rem;
+    cursor: pointer;
 }
