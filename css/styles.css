@@ -8,7 +8,8 @@
 }
 :root {
     --couleur-texte: #2a292b;
-    --color-bg: #f9f4ed;
+    /* --color-bg: #f9f4ed; */
+    --color-bg: rgb(165, 101, 42);
     --color-bouton: #ff5c00;
     --hauteur-entete: 5rem;
     --border-radius: 1.25rem;
